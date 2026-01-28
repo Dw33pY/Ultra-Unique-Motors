@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ultra Unique Motors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="logo"><i class="fas fa-car"></i> Ultra<span>Unique</span></div>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1 class="reveal">About Ultra Unique Motors</h1>
+      <p class="reveal">Our journey, values, and commitment to excellence</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="page-content">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon">
+            <i class="fas fa-history"></i>
+          </div>
+          <h3>Our Story</h3>
+          <p>Founded in 2010, Ultra Unique Motors began with a simple mission: to provide exceptional vehicles with transparent pricing. What started as a small dealership has grown into one of the most trusted names in premium vehicles.</p>
+        </div>
+        
+        <div class="about-card reveal">
+          <div class="about-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>To redefine car buying by offering meticulously inspected vehicles, transparent transactions, and outstanding customer service that continues long after the sale.</p>
+        </div>
+        
+        <div class="about-card reveal">
+          <div class="about-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>To become the most trusted and innovative automotive dealership, setting new standards for quality and customer satisfaction in the industry.</p>
+        </div>
+      </div>
+      
+      <div class="about-details reveal">
+        <h2>Why Choose Us?</h2>
+        <div class="details-grid">
+          <div class="detail-item">
+            <i class="fas fa-certificate"></i>
+            <h4>Quality Assurance</h4>
+            <p>Every vehicle undergoes a comprehensive 150-point inspection by certified technicians.</p>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-handshake"></i>
+            <h4>Transparent Process</h4>
+            <p>No hidden fees, no pressure tactics - just honest pricing and clear communication.</p>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-headset"></i>
+            <h4>After-Sales Support</h4>
+            <p>Our relationship doesn't end at purchase. We offer ongoing support and maintenance guidance.</p>
+          </div>
+          <div class="detail-item">
+            <i class="fas fa-award"></i>
+            <h4>Award Winning</h4>
+            <p>Recognized as "Dealership of the Year" for three consecutive years by Automotive Excellence Magazine.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-section reveal">
+        <h2>Meet Our Leadership</h2>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-img">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="CEO">
+            </div>
+            <h4>Michael Chen</h4>
+            <p>CEO & Founder</p>
+          </div>
+          <div class="team-member">
+            <div class="member-img">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sales Director">
+            </div>
+            <h4>Sarah Johnson</h4>
+            <p>Sales Director</p>
+          </div>
+          <div class="team-member">
+            <div class="member-img">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Technical Lead">
+            </div>
+            <h4>David Kimani</h4>
+            <p>Technical Lead</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Ultra<span>Unique</span> Motors</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="credits">
+        <p>© 2026 Ultra Unique Motors | Crafted with passion by <span>Dw33pY</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/254784912078" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
