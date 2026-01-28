@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Cars | Ultra Unique Motors</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="logo"><i class="fas fa-car"></i> Ultra<span>Unique</span></div>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="cars.html">Our Cars</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1 class="reveal">Our Premium Collection</h1>
+      <p class="reveal">Browse our carefully curated selection of exceptional vehicles</p>
+      <div class="search-box reveal">
+        <input type="text" id="searchInput" placeholder="Search by model, brand, or feature...">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-options reveal">
+        <div class="filter-group">
+          <label for="categoryFilter">Category:</label>
+          <select id="categoryFilter" class="filter-select">
+            <option value="all">All Categories</option>
+            <option value="suv">SUV</option>
+            <option value="sedan">Sedan</option>
+            <option value="luxury">Luxury</option>
+            <option value="performance">Performance</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="priceFilter">Price Range:</label>
+          <select id="priceFilter" class="filter-select">
+            <option value="all">All Prices</option>
+            <option value="0-2">Under Ksh 2M</option>
+            <option value="2-4">Ksh 2M - 4M</option>
+            <option value="4+">Over Ksh 4M</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="yearFilter">Year:</label>
+          <select id="yearFilter" class="filter-select">
+            <option value="all">All Years</option>
+            <option value="2023-2024">2023-2024</option>
+            <option value="2020-2022">2020-2022</option>
+            <option value="2017-2019">2017-2019</option>
+          </select>
+        </div>
+        <button id="resetFilters" class="btn-filter">Reset Filters</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cars Grid -->
+  <section class="cars-page">
+    <div class="container">
+      <div class="cars-grid" id="carsGrid">
+        <!-- Cars will be loaded dynamically via JavaScript -->
+      </div>
+      <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-car-crash"></i>
+        <h3>No cars found matching your criteria</h3>
+        <p>Try adjusting your filters or search terms</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Test Drive CTA -->
+  <section class="test-drive-cta reveal">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready for a Test Drive?</h2>
+        <p>Experience the performance and comfort firsthand. Schedule your test drive today.</p>
+        <a href="contact.html" class="btn">Schedule Test Drive</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">Ultra<span>Unique</span> Motors</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cars.html">Cars</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="credits">
+        <p>© 2026 Ultra Unique Motors | Crafted with passion by <span>Dw33pY</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/254784912078" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Car Data Template (hidden) -->
+  <template id="carTemplate">
+    <div class="car-card-page" data-category="" data-price="" data-year="">
+      <div class="car-badge"></div>
+      <img src="" alt="" class="car-img">
+      <div class="car-card-content">
+        <h3></h3>
+        <p class="car-price"></p>
+        <div class="features-list">
+          <span class="engine"></span>
+          <span class="mileage"></span>
+          <span class="year"></span>
+        </div>
+        <div class="car-actions">
+          <button class="btn-view">View Details</button>
+          <button class="btn-inquire">Inquire Now</button>
+        </div>
+      </div>
+    </div>
+  </template>
+</body>
+        </html>
